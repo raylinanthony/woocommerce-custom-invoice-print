@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Shipping Labels</title> 
+	<style type="text/css" >
+		body {
+			font-size: 14px;
+			font-family: arial;
+			line-height:1.2;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		.section {
+			max-width: 800px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		table  {
+			flex:0 0 49%;
+			margin: 6px 0;
+			border: 2px solid #333;
+		}
+		table td{
+			padding:15px;
+		}
+		h2{
+			margin: 0 0 10px;
+			font-size: 16px;
+		}
+		@media print {
+			.pagebreak { page-break-before: always; } /* page-break-after works, as well */
+		}
+	</style>
+</head>
+<body onload="window.print();"> 
+	<div class="section">
+		{{BODY}}
+	</div>   
+</body>
+</html>

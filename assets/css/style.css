@@ -1,0 +1,7 @@
+/*
+ woo-print-invoice-by-ray
+@author Raylin Aquino <info@raylinaquino.com>
+@url https://raylinaquino.com
+**/
+
+.post-type-shop_order .wp-list-table tbody tr.status-wc-preparando{background: #ceeef3;}
